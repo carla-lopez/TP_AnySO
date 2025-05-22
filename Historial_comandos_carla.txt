@@ -1,0 +1,58 @@
+ls -la
+cd ..
+cd -
+ls -l
+ls -l carpeta_compartida
+ll
+ll carpeta_compartida
+echo "algo mas" > compartido_host1
+cat compartido_host1
+mkdir -p ejercicio1/{dir1,dir2}
+tree ejercicio1
+snap info tree
+ll
+ls -l
+cd
+ls
+ls repogit
+ls TP_AnySO
+cd
+cd TP_AnySO
+git clone 
+git clone git@github.com:carla-lopez/TP_AnySO.git
+cd TP_AnySO/
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep -i HOME_URL /etc/os-release
+grep home_url /etc/os-release
+whoami
+echo "vagrant=$(whoami)" > datos_usuario.txt
+git add .
+git config --global user.email "carla.alopez@hotmail.com" git config --global user.name "carla-lopez"
+git add .
+git config --global user.email "carla.alopez@hotmail.com"
+git config --global user.name "carla-lopez"
+git commit -m "ADD: agregado 1er ejercicio sobre datos"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "feat: anadiendo informacion CPU"
+cat << EOF >> README.md alunno : carla division : 314 turno: noche EOF
+alumno carla
+division 314
+turno noche
+EOF
+
+cat <<EOF >> README.MD
+Alumno: Carla
+Division: 314
+Turno: Noche
+EOF
+
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo readme y datos del usuario"
+git push
+history -a
